@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/config-server.iml" filepath="$PROJECT_DIR$/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../customer-balance/customer-balance.iml" filepath="$PROJECT_DIR$/../customer-balance/customer-balance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../discovery/eureka-service-discovery.iml" filepath="$PROJECT_DIR$/../discovery/eureka-service-discovery.iml" />
+    </modules>
+  </component>
+</project>
