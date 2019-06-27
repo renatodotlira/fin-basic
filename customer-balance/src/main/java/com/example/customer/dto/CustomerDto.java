@@ -2,18 +2,16 @@ package com.example.customer.dto;
 
 import com.example.customer.domain.Customer;
 import com.example.customer.enums.CustomerTypeEnum;
+
+import com.example.customer.enums.StatusAccountEnum;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
-
-import java.util.UUID;
 
 @Getter
 @Setter
 public class CustomerDto {
 
-    @Id
-    private String id = UUID.randomUUID().toString();
+    private String id;
 
     private String name;
 
@@ -23,7 +21,7 @@ public class CustomerDto {
 
     private double atualBalance = 0d;
 
-    private boolean enabled = true;
+    private StatusAccountEnum status;
 
     public CustomerDto() {
     }
@@ -34,7 +32,7 @@ public class CustomerDto {
         this.customerType = customer.getCustomerType();
         this.document = customer.getDocument();
         this.atualBalance = customer.getAtualBalance();
-        this.enabled = customer.isEnabled();
+        this.status = customer.getStatus();
     }
 
     public Customer toModel(){

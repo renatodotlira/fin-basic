@@ -2,6 +2,7 @@ package com.example.customer.domain;
 
 import com.example.customer.dto.CustomerDto;
 import com.example.customer.enums.CustomerTypeEnum;
+import com.example.customer.enums.StatusAccountEnum;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
@@ -25,7 +26,7 @@ public class Customer implements Cloneable {
 
     private double atualBalance = 0d;
 
-    private boolean enabled = true;
+    private StatusAccountEnum status;
 
     public Customer() {
     }
@@ -36,21 +37,23 @@ public class Customer implements Cloneable {
         this.customerType = customerDto.getCustomerType();
         this.document = customerDto.getDocument();
         this.atualBalance = customerDto.getAtualBalance();
-        this.enabled = customerDto.isEnabled();
+        this.status = customerDto.getStatus();
     }
 
     public CustomerDto toDto(){
         return new CustomerDto(this);
     }
 
-    public Customer disable(){
-        try {
-            Customer c = (Customer) this.clone();
-            c.enabled = false;
-            return c;
-        } catch (CloneNotSupportedException e) {
-            return null;
-        }
+    public void inactiveAccount(){
+        status = StatusAccountEnum.INACTIVE;
+    }
+
+    public void debitAccountBalance(double amount){
+        this.atualBalance = this.atualBalance - amount;
+    }
+
+    public void creditAccountBalance(double amount){
+        this.atualBalance = this.atualBalance + amount;
     }
 
 }

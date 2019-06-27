@@ -1,3 +1,17 @@
-C:\Users\renato.camarao\Documents\outros projetos\sentence-with-gateway\word\src\main\java\com\example\word\WordApplication.java
-C:\Users\renato.camarao\Documents\outros projetos\sentence-with-gateway\word\src\main\java\com\example\word\WordController.java
-C:\Users\renato.camarao\Documents\outros projetos\sentence-with-gateway\word\src\main\java\com\example\word\Word.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/service/impl/CustomerServiceImpl.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/repository/CustomerRepository.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/service/CustomerService.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/service/impl/AccountMovementServiceImpl.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/service/AccountMovementService.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/domain/Customer.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/controller/CustomerController.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/dto/CustomerDto.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/config/SwaggerConfig.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/dto/CustomerCreateDto.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/dto/AccountMovementDto.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/enums/CustomerTypeEnum.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/enums/StatusAccountEnum.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/controller/AccountMovementController.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/repository/AccountMovementRepository.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/CustomerApplication.java
+/home/renato/Documents/projects/fin-basic/customer-balance/src/main/java/com/example/customer/domain/AccountMovement.java
