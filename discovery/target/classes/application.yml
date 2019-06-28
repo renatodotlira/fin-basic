@@ -1,12 +1,18 @@
 ---
 # This default profile is used when running a single instance completely standalone:
 spring:
-  profiles: default
+  application:
+    # sets the name in Eureka
+    name: ${springboot.app.name:eureka-serviceregistry}
+
 server:
-  port: 8010  
+  port: 8010
+
 eureka:
   instance:
-    hostname: localhost  
+    hostname: ${springboot.app.name:eureka-serviceregistry}
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${registry.host:localhost}:${server.port}/eureka/
